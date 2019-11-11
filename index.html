@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-image:url('images/back.png');">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Univoice</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/titulo.PNG" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/titulo.PNG">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="seo_version">
+
+
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/univoicelogo.jpg" width=100 height=100 alt="UniVoice"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
+                        <li><a class="btn-light btn-radius btn-brd top-btn"><i class="fa fa-angle-double-right"></i>Inscrições encerradas</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-top">
+                        <li><a class="active" href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre o UniVoice</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#modalContato">Contato</a></li>
+                        <li><a href="" name="creditos" id="creditos" data-toggle="modal" data-target="#modalCreditos">Créditos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="display: none" class="modal fade" id="modalContato" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contato</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Problemas com a inscrição:</b></p>
+                    <p><b>Número:</b> (12)98877-8631</p>
+                    <p><b>Email:</b> christiantudeschini@gmail.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display: none" class="modal fade" id="modalCreditos" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Créditos</h4>
+                </div>
+                <div class="modal-body">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <div id="mostraimg" style="display: none" class="circle">
+                                    <img src="/images/fotoperfil.jpg">
+                                </div>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <p align="center" style="color: black"><b>Christian Tudeschini Pereira</b><br>Desenvolvedor</p>
+                    <p align="center"><b></b></p>
+                    <br><br>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <div id="mostraimg2" style="display: none" class="circle">
+                                    <img src="/images/rafa.jpg">
+                                </div>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <p align="center" style="color: black"><b>Rafael Teodoro</b><br>Consultor Visual</p>
+                    <p align="center"><b></b></p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="fecharcred" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        .circle {
+            background-color: #aaa;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .circle img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .modal {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+        
+        .modal {
+            display: table;
+        }
+        
+        .body {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        "
+    </style>
+
+    <script>
+        $("#creditos").click(function() {
+
+            $("#mostraimg").css("display", "block");
+            $("#mostraimg2").css("display", "block");
+        });
+
+        $("#fecharcred").click(function() {
+            $("#mostraimg").css("display", "none");
+            $("#mostraimg2").css("display", "none");
+        });
+    </script>
+
+
+    <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('images/fundo.jpg');">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 col-sm-12 ">
+                    <div class="big-tagline ">
+                        <h2>UNIVOICE 2019</h2>
+                        <p class="lead ">30 de Setembro à 7 de Outubro - <b>Inscrições</b></p>
+                        <!--<p class="lead ">5 de Agosto - <b>Audição</b></p>
+                        <p class="lead ">10 de Setembro - <b>Lista de Convocados</b></p>-->
+                        <p class="lead ">30 de Outubro - <b>Evento</b></p>
+                        <a class="btn btn-light btn-radius btn-brd ban-btn " style="background-color: #0074b1">Inscrições encerradas</a>
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="app_iphone_02 wow slideInUp hidden-xs hidden-sm " data-wow-duration="1s " data-wow-delay="0.5s ">
+                    <!---<img src="uploads/rocket.png " alt=" " class="img-responsive ">-->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end section -->
+
+
+
+    <!-- end copyrights -->
+
+    <a href="# " id="scroll-to-top " class="dmtop global-radius "><i class="fa fa-angle-up "></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js "></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js "></script>
+
+    <small> Desenvolvido por: Christian T. </small>
+
+
+
+
+</body>
+
+</html>

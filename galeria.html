@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head style="background-image:url('images/back.png');">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Univoice</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/titulo.PNG" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/titulo.PNG">
+
+<body>
+    <br>
+    <div align="center" id="botao">
+        <button style="background-color: #0074b1; width: 180px; height: 80px" onclick="retornar()">Voltar para a página inicial </button>
+    </div>
+<br><br>
+    <section id="secao" class="container gallery-container">
+
+        <!--Slide-->
+        <div class="mySlides fade"> <!-- 01 -->
+            <div class="numbertext">01 / 22</div>
+            <img class="imgslide" src="../imagensgal/1.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 02 -->
+            <div class="numbertext">02 / 22</div>
+            <img class="imgslide" src="../imagensgal/2.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 03 -->
+            <div class="numbertext">03 / 22</div>
+            <img class="imgslide" src="../imagensgal/3.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 04 -->
+            <div class="numbertext">04 / 22</div>
+            <img class="imgslide" src="../imagensgal/4.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">05 / 22</div>
+            <img class="imgslide" src="../imagensgal/5.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">06 / 22</div>
+            <img class="imgslide" src="../imagensgal/6.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">07 / 22</div>
+            <img class="imgslide" src="../imagensgal/7.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">08 / 22</div>
+            <img class="imgslide" src="../imagensgal/8.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">09 / 22</div>
+            <img class="imgslide" src="../imagensgal/9.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">10 / 22</div>
+            <img class="imgslide" src="../imagensgal/10.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">11 / 22</div>
+            <img class="imgslide" src="../imagensgal/11.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">12 / 22</div>
+            <img class="imgslide" src="../imagensgal/12.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">13 / 22</div>
+            <img class="imgslide" src="../imagensgal/13.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">14 / 22</div>
+            <img class="imgslide" src="../imagensgal/14.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">15 / 22</div>
+            <img class="imgslide" src="../imagensgal/15.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">16 / 22</div>
+            <img class="imgslide" src="../imagensgal/16.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">17 / 22</div>
+            <img class="imgslide" src="../imagensgal/17.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">18 / 22</div>
+            <img class="imgslide" src="../imagensgal/18.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">19 / 22</div>
+            <img class="imgslide" src="../imagensgal/19.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">20 / 22</div>
+            <img class="imgslide" src="../imagensgal/20.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">21 / 22</div>
+            <img class="imgslide" src="../imagensgal/21.jpg" />
+            
+        </div>
+
+        <div class="mySlides fade"> <!-- 05 -->
+            <div class="numbertext">22 / 22</div>
+            <img class="imgslide" src="../imagensgal/22.jpg" />
+            
+        </div>
+        <!--Final Slides-->
+
+        <!--Navigation-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ok, maybe you should use it for you gallery works */
+        }
+
+        body {
+        background: #efefef;
+        color: #333;
+        font-family: 'Open Sans', sans-serif;
+        }
+
+        .wtricks-headerbar {
+        width: 100%;
+        height: 100px;
+        background: #FFC402;
+        padding-top: 10px;
+        }
+        .wtricks-logo {
+            width: 286px;
+            height: 77px;
+            margin: 0 auto;
+            display: block;
+            text-indent: -9999px;
+            background: url('http://cdn.wtricks.com.br/images-theme/logo.png');
+        }
+
+        .wrap {
+        width: 100%;
+        height: 100vh;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        }
+
+        .page-header, .page-footer {
+            width: 100%;
+            margin: 20px;
+            text-align: center; /* Take careful when you use text-align center
+            Bacause this affects postion of gallery navigation! I recomend you use it
+            inside a container like this. */
+        }
+            @media (min-width: 800px) {
+                .page-header, .page-footer {
+                width: 800px;
+                padding: 0;
+                }
+            }
+            .page-header p {
+            margin-top: 20px;
+            font-size: .8em;
+            }
+        .page-footer p {
+        color: #ccc;
+        }
+        .page-footer a {
+        color: #000;
+        text-decoration: none;
+        }
+
+        /* Final page style
+        !!Below this line, Gallery's code starts!!*/
+
+        /* Slideshow container */
+        .gallery-container {
+        width: 90%;
+        position: relative;
+        margin: 0 5%;
+        background: #333;
+        padding: 2px;
+        }
+        @media (min-width: 480px) {
+            .gallery-container {
+                width: 800px;
+                margin: auto;
+            }
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+        display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.1);
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+        }
+
+        .imgslide {
+        width: 100%;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        @media (max-width: 768px) {
+        .numbertext {
+            top: 15px;
+        }
+        }
+
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+     
+
+    </style>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+    }
+
+
+    function retornar(){
+        location.href = "http://univoice.hol.es/";
+    }
+
+    </script>
+
+<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+<!-- ALL JS FILES -->
+<script src="js/all.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>

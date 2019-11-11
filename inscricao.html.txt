@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head style="background-image:url('images/back.png');">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Univoice</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/titulo.PNG" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/titulo.PNG">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+
+
+
+<body class="seo_version">
+
+
+    <header class="header header_style_01">
+
+        <nav class="megamenu navbar navbar-default">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a class="navbar-brand" name="logosite" id="logosite" href="index.html"><img src="images/univoicelogo.jpg" width=100 height=100 alt="UniVoice"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu-top">
+                        <li><a class="index.html" href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre o UniVoice</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#modalContato">Contato</a></li>
+                        <li><a href="" name="creditos" id="creditos" data-toggle="modal" data-target="#modalCreditos">Créditos</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div style="display: none" class="modal fade" id="modalContato" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contato</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Problemas com a inscrição:</b></p>
+                    <p><b>Número:</b> (12)98877-8631</p>
+                    <p><b>Email:</b> christiantudeschini@gmail.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display: none" class="modal fade" id="modalCreditos" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Créditos</h4>
+                </div>
+                <div class="modal-body">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <div id="mostraimg" style="display: none" class="circle">
+                                    <img src="/images/fotoperfil.jpg">
+                                </div>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <p align="center" style="color: black"><b>Christian Tudeschini Pereira</b><br>Desenvolvedor</p>
+                    <p align="center"><b></b></p>
+                    <br><br>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <div id="mostraimg2" style="display: none" class="circle">
+                                    <img src="/images/rafa.jpg">
+                                </div>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <p align="center" style="color: black"><b>Rafael Teodoro</b><br>Consultor Visual</p>
+                    <p align="center"><b></b></p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="fecharcred" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        .circle {
+            background-color: #aaa;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .circle img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .modal {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+        
+        .modal {
+            display: table;
+        }
+        
+        .body {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        $("#creditos").click(function() {
+
+            $("#mostraimg").css("display", "block");
+            $("#mostraimg2").css("display", "block");
+        });
+
+        $("#fecharcred").click(function() {
+            $("#mostraimg").css("display", "none");
+            $("#mostraimg2").css("display", "none");
+        });
+    </script>
+
+
+    <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('images/fundo.jpg');">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12">
+
+
+
+                    <div class="col-sm-6">
+
+                        <div class="container">
+
+
+
+                            <form name=a1>
+
+                                <input checked="checked" id="um" type="radio" name="tipo" value="um"> Solo<br>
+                                <input id="dois" type="radio" name="tipo" value="dois"> Dupla<br><br>
+
+                                <label id="nome">Nome</label>
+
+                                <input type="text" class="form-control" name="nome" id="txtnome" placeholder="Insira seu nome">
+
+                                <br>
+
+
+
+                                <label id="nome">Matricula</label>
+
+                                <input type="text" onkeypress="return onlynumber()" class="form-control" maxlength="8" name="mat" id="txtmat" placeholder="Insira sua matrícula">
+
+                                <br>
+
+                                <label id="nome">Sala</label>
+
+                                <select class="form-control" name="sala" id="selectsala">
+    
+                                <option>1°A</option>
+    
+                                <option>1°B</option>
+    
+                                <option>1°C</option>
+    
+                                <option>1°D</option>
+    
+                                <option>1°E</option>
+    
+                                <option>1°F</option>                            
+    
+                                <option>1°G</option>
+    
+                                <option>1°H</option>
+    
+                                <option>2°A</option>
+    
+                                <option>2°B</option>
+    
+                                <option>2°C</option>
+    
+                                <option>2°D</option>
+    
+                                <option>2°E</option>
+    
+                                <option>2°F</option>
+
+                                <option>2°G</option>
+    
+                                <option>3°A</option>
+    
+                                <option>3°B</option>
+    
+                                <option>3°C</option>
+    
+                                <option>3°D</option>
+    
+                                <option>3°E</option>
+                        
+                            </select>
+                                <br>
+                            </form>
+
+                            <form id="a2" style="display: none;">
+                                <br>
+                                <label id="nome">Nome</label>
+
+                                <input type="text" class="form-control" name="nome" id="txtnome2" placeholder="Insira seu nome">
+
+                                <br>
+
+
+
+                                <label id="nome">Matricula</label>
+
+                                <input type="text" onkeypress="return onlynumber()" class="form-control" maxlength="8" name="mat" id="txtmat2" placeholder="Insira sua matrícula">
+
+                                <br>
+
+                                <label id="nome">Sala</label>
+
+                                <select class="form-control" name="sala" id="selectsala2">
+    
+                                <option>1°A</option>
+    
+                                <option>1°B</option>
+    
+                                <option>1°C</option>
+    
+                                <option>1°D</option>
+    
+                                <option>1°E</option>
+    
+                                <option>1°F</option>                            
+    
+                                <option>1°G</option>
+    
+                                <option>1°H</option>
+    
+                                <option>2°A</option>
+    
+                                <option>2°B</option>
+    
+                                <option>2°C</option>
+    
+                                <option>2°D</option>
+    
+                                <option>2°E</option>
+    
+                                <option>2°F</option>
+
+                                <option>2°G</option>
+    
+                                <option>3°A</option>
+    
+                                <option>3°B</option>
+    
+                                <option>3°C</option>
+    
+                                <option>3°D</option>
+    
+                                <option>3°E</option>
+                        
+                            </select>
+                                <br>
+                            </form>
+
+
+
+                            <button id="envio" class="btn btn-primary">Enviar</button>
+
+
+                            <span id="status" class="badge badge-dark"></span>
+
+
+                            <script type="text/javascript">
+                                var indet = "";
+
+                                $('#txtnome').keypress(function(e) {
+                                    var keyCode = (e.keyCode ? e.keyCode : e.which); // Variar a chamada do keyCode de acordo com o ambiente.
+                                    if (keyCode > 47 && keyCode < 58) {
+                                        e.preventDefault();
+                                    }
+                                });
+
+                                $('#txtnome2').keypress(function(e) {
+                                    var keyCode = (e.keyCode ? e.keyCode : e.which); // Variar a chamada do keyCode de acordo com o ambiente.
+                                    if (keyCode > 47 && keyCode < 58) {
+                                        e.preventDefault();
+                                    }
+                                });
+
+                                function onlynumber(evt) {
+                                    var theEvent = evt || window.event;
+                                    var key = theEvent.keyCode || theEvent.which;
+                                    key = String.fromCharCode(key);
+                                    //var regex = /^[0-9.,]+$/;
+                                    var regex = /^[0-9.]+$/;
+                                    if (!regex.test(key)) {
+                                        theEvent.returnValue = false;
+                                        if (theEvent.preventDefault) theEvent.preventDefault();
+                                    }
+                                }
+
+                                $("#um").click(function() {
+                                    indet = 1;
+
+                                    var a = $("#txtnome2").val("");
+                                    var b = $("#selectsala2").val("");
+                                    var c = $("#txtmat2").val("");
+
+                                    $("#a2").css("display", "none");
+
+                                });
+
+                                $("#dois").click(function() {
+                                    indet = 2;
+
+                                    $("#a2").css("display", "block");
+                                });
+
+                                $('#envio').click(function() {
+
+                                    var nome = $('#txtnome').val();
+                                    var sala = $("#selectsala").val();
+                                    var mat = $("#txtmat").val();
+
+                                    var nome2 = $('#txtnome2').val();
+                                    var sala2 = $("#selectsala2").val();
+                                    var mat2 = $("#txtmat2").val();
+
+                                    var pagina = "envio.php";
+
+                                    if (indet == 1 || indet == "") {
+
+                                        if (nome != "" && sala != "" && mat != "") {
+                                            nome2 = "";
+                                            sala2 = "";
+                                            mat2 = "";
+
+                                            $.ajax({
+                                                type: "POST",
+                                                url: pagina,
+                                                beforeSend: function() {
+                                                    $('#status').text("...enviando");
+
+                                                },
+                                                data: {
+                                                    nome,
+                                                    sala,
+                                                    mat,
+                                                    nome2,
+                                                    sala2,
+                                                    mat2
+                                                },
+                                                success: function() {
+                                                    alert("Inscrição feita com sucesso! Estamos te redirecionando para a página inicial");
+                                                    window.location.replace("http://univoice.hol.es/index.html");
+                                                },
+                                                error: function() {
+                                                    alert("A inscrição não pode ser realizada, tente mais tarde ou entre na página de contato");
+                                                }
+
+                                            });
+
+                                        } else {
+                                            alert("Informe todos os dados requisitados");
+                                        }
+                                    } else if (indet == 2) {
+                                        if (nome != "" && sala != "" && mat != "" && nome2 != "" && sala2 != "" && mat2 != "") {
+
+                                            $.ajax({
+                                                type: "POST",
+                                                url: pagina,
+                                                beforeSend: function() {
+                                                    $('#status').text("...enviando");
+
+                                                },
+                                                data: {
+                                                    nome,
+                                                    sala,
+                                                    mat,
+                                                    nome2,
+                                                    sala2,
+                                                    mat2
+                                                },
+                                                success: function() {
+                                                    alert("Inscrição feita com sucesso! Estamos te redirecionando para a página inicial");
+                                                    window.location.replace("http://univoice.hol.es/index.html");
+                                                },
+                                                error: function() {
+                                                    alert("A inscrição não pode ser realizada, tente mais tarde ou entre na página de contato");
+                                                }
+
+                                            });
+
+                                        } else {
+                                            alert("Informe todos os dados requisitados");
+                                        }
+                                    }
+
+                                });
+                            </script>
+
+                        </div>
+
+
+                        <style>
+                            #status {
+                                position: relative;
+                                left: 20px;
+                            }
+                            
+                            #nome {
+                                color: #F8F8FF;
+                            }
+                            
+                            #envio {
+                                width: 90px;
+                                height: 50px;
+                            }
+                        </style>
+
+                        <br><br><br><br><br>
+
+                    </div>
+
+
+
+
+
+                    <div class="app_iphone_02 wow slideInUp hidden-xs hidden-sm" data-wow-duration="1s" data-wow-delay="0.5s">
+
+                        <!---<img src="uploads/rocket.png" alt="" class="img-responsive">-->
+
+                    </div>
+
+                </div>
+
+                <!-- end row -->
+
+            </div>
+
+            <!-- end container -->
+
+        </div>
+
+        <!-- end section -->
+
+
+
+
+
+
+
+        <!-- end copyrights -->
+
+
+
+        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+
+
+        <!-- ALL JS FILES -->
+
+        <script src="js/all.js"></script>
+
+        <!-- ALL PLUGINS -->
+
+        <script src="js/custom.js"></script>
+
+
+
+</body>
+
+
+
+</html>
